@@ -1,0 +1,16 @@
+{
+  "name": "tools",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "angular": "~1.5.7",
+    "angular-route": "^1.5.8",
+    "bulma": "0.0.28"
+  }
+}

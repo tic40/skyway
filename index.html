@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="SkywayRoom">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>skyway</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <style>
+        .icon { cursor: pointer; }
+        #videoCallee, #videoCaller { width: 100%; }
+    </style>
+</head>
+
+<body>
+
+    <!-- view -->
+    <div ng-view></div>
+
+    <script src="https://skyway.io/dist/0.3/peer.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="src/js/applications/skywayRoom.js"></script>
+    <script src="src/js/constants/base.js"></script>
+    <script src="src/js/services/api.js"></script>
+    <script src="src/js/services/skyway.js"></script>
+    <script src="src/js/services/user.js"></script>
+    <script src="src/js/controllers/top.js"></script>
+    <script src="src/js/controllers/room.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-57261073-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+</html>

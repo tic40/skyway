@@ -1,0 +1,34 @@
+<section class="hero is-primary is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+
+            <h1 class="title">skyway</h1>
+
+            <!-- loading animation -->
+            <div class="is-overlay" ng-show="showLoading">
+                <span class="icon is-large">
+                    <i class="fa fa-spinner fa-pulse fa-fw"></i>
+                </span>
+            </div>
+
+            <!-- error message -->
+            <div class="notification is-danger" ng-show="loginError">
+                <button class="delete" ng-click="loginError = !loginError"></button>
+                LOGIN ERROR!!
+                TODO: error message here
+            </div>
+
+            <div class="container" ng-class="{'is-disabled': showLoading == true}" style="color: #FFF; max-width: 480px; margin-top: 2em;">
+
+                <p class="control has-icon">
+                    <input type="text" class="input" placeholder="your name" ng-model="params.name">
+                    <i class="fa fa-tag"></i>
+                </p>
+                <p class="control has-text-centered">
+                    <button class="button is-danger" style="width: 100%; height: 2.6em;" ng-click="enter()" ng-disabled="!params.name || showLoading">ENTER</button>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
